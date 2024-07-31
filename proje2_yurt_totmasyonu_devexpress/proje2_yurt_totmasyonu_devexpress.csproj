@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FABF8BCA-9B77-43FF-8CB3-BB1474865B7F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>proje2_yurt_totmasyonu_devexpress</RootNamespace>
+    <AssemblyName>proje2_yurt_totmasyonu_devexpress</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v22.2.Core, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.UI, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.2.Wizard, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraMap.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlBaglanti.cs" />
+    <Compile Include="XtraBolumler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraBolumler.Designer.cs">
+      <DependentUpon>XtraBolumler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraGelirListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraGelirListesi.Designer.cs">
+      <DependentUpon>XtraGelirListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraGider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraGider.Designer.cs">
+      <DependentUpon>XtraGider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraGiderListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraGiderListesi.Designer.cs">
+      <DependentUpon>XtraGiderListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraGorseller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraGorseller.Designer.cs">
+      <DependentUpon>XtraGorseller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraHome.Designer.cs">
+      <DependentUpon>XtraHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraMap.Designer.cs">
+      <DependentUpon>XtraMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraOdemeler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraOdemeler.Designer.cs">
+      <DependentUpon>XtraOdemeler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraOgrenciDuzenleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraOgrenciDuzenleme.Designer.cs">
+      <DependentUpon>XtraOgrenciDuzenleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraOgrenciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraOgrenciEkle.Designer.cs">
+      <DependentUpon>XtraOgrenciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraOgrenciListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraOgrenciListesi.Designer.cs">
+      <DependentUpon>XtraOgrenciListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraPersonelDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraPersonelDuzenle.Designer.cs">
+      <DependentUpon>XtraPersonelDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XtraPersonelEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XtraPersonelEkle.Designer.cs">
+      <DependentUpon>XtraPersonelEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtraprogres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtraprogres.Designer.cs">
+      <DependentUpon>Xtraprogres.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraBolumler.resx">
+      <DependentUpon>XtraBolumler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraGelirListesi.resx">
+      <DependentUpon>XtraGelirListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraGider.resx">
+      <DependentUpon>XtraGider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraGiderListesi.resx">
+      <DependentUpon>XtraGiderListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraGorseller.resx">
+      <DependentUpon>XtraGorseller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraHome.resx">
+      <DependentUpon>XtraHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraMap.resx">
+      <DependentUpon>XtraMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraOdemeler.resx">
+      <DependentUpon>XtraOdemeler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraOgrenciDuzenleme.resx">
+      <DependentUpon>XtraOgrenciDuzenleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraOgrenciEkle.resx">
+      <DependentUpon>XtraOgrenciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraOgrenciListesi.resx">
+      <DependentUpon>XtraOgrenciListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraPersonelDuzenle.resx">
+      <DependentUpon>XtraPersonelDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraPersonelEkle.resx">
+      <DependentUpon>XtraPersonelEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtraprogres.resx">
+      <DependentUpon>Xtraprogres.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
